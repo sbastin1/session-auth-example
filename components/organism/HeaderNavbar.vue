@@ -94,15 +94,18 @@ const toggleDropdown = () => {
         border-radius: 0 4px 4px 4px;
         li {
           margin: 10px 0;
-          padding: 8px;
 
-          &:hover {
-            background-color: rgb(49, 49, 49);
-          }
+          a {
+            padding: 8px;
 
-          @media only screen and (min-width: 720px) {
             &:hover {
-              border-radius: 6px;
+              background-color: rgb(49, 49, 49);
+            }
+
+            @media only screen and (min-width: 720px) {
+              &:hover {
+                border-radius: 6px;
+              }
             }
           }
         }
@@ -121,7 +124,11 @@ const toggleDropdown = () => {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: 40px;
+      gap: 2px;
+
+      @media only screen and (min-width: 720px) {
+        gap: 40px;
+      }
 
       &__signup {
         a {

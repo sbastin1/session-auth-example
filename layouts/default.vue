@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import OrgNavbar from "~/components/organisms/OrgNavbar.vue";
+import OrgNavbar from "~/components/organism/HeaderNavbar.vue";
 </script>
 
 <style lang="scss">
